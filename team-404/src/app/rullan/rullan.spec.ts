@@ -7,15 +7,21 @@ describe('Rullan', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Rullan],
+      imports: [Rullan]
     }).compileComponents();
 
     fixture = TestBed.createComponent(Rullan);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render member name in h2', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const h2Element = compiled.querySelector('h2');
+    expect(h2Element?.textContent).toContain('Harvey Laurence P. Rullan');
   });
 });

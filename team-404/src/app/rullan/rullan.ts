@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-rullan',
-  styleUrl: './rullan.scss',
+  imports: [],
   templateUrl: './rullan.html',
+  styleUrl: './rullan.scss'
 })
-export class Rullan {}
+export class Rullan {
+  fullName = signal('Harvey Laurence P. Rullan');
+}
