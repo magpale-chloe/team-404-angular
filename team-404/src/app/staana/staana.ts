@@ -12,4 +12,5 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class Staana {
   fullName = signal('Sta. Ana, Matthew E.');
+  imagePath = signal('assets/Matthew-Photo.jpg');
 }

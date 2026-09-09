@@ -1,6 +1,14 @@
 <div class="staana-container" id="staana_container">
   <mat-card class="profile-card" id="profile_card">
     <mat-card-header class="card-header" id="card_header">
+      <div class="avatar-wrapper" id="avatar_wrapper">
+        <img
+          class="profile-image"
+          id="profile_image"
+          [src]="imagePath()"
+          alt="Sta. Ana, Matthew E."
+        />
+      </div>
       <div class="header-text" id="header_text">
         <h2 class="member-name" id="member_name">
           {{ fullName() }}
