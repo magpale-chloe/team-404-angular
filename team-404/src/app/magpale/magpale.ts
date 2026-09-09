@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   imports: [],
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './magpale.html',
 })
 export class Magpale {
+  name = signal('Precious Chloe Magpale');
 }
