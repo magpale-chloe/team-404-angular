@@ -13,4 +13,13 @@ import { MatIconModule } from '@angular/material/icon';
 export class Staana {
   fullName = signal('Sta. Ana, Matthew E.');
   imagePath = signal('assets/Matthew-Photo.jpg');
+  role = signal('BSIT Student & Developer');
+  description = signal(
+    'I am Matthew E. Sta. Ana, a dedicated IT student passionate about web development and software engineering. I enjoy building clean, responsive, and accessible applications with modern frameworks.',
+  );
+  isDescriptionVisible = signal(false);
+
+  toggleDescription(): void {
+    this.isDescriptionVisible.update((isVisible) => !isVisible);
+  }
 }
