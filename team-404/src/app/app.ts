@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Magpale } from './magpale/magpale';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Magpale],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
