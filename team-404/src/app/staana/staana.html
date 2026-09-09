@@ -21,7 +21,7 @@
 
     <mat-divider></mat-divider>
 
-    <div class="card-content" id="card_content">
+    <mat-card-content class="card-content" id="card_content">
       @if (isDescriptionVisible()) {
         <div class="bio-section" id="bio_section">
           <p class="description-text" id="description_text">
@@ -29,9 +29,9 @@
           </p>
         </div>
       }
-    </div>
+    </mat-card-content>
 
-    <div class="card-actions" id="card_actions">
+    <mat-card-actions class="card-actions" id="card_actions">
       <button
         mat-flat-button
         color="primary"
@@ -54,6 +54,6 @@
           }
         </span>
       </button>
-    </div>
+    </mat-card-actions>
   </mat-card>
 </div>
