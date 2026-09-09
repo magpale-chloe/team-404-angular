@@ -8,7 +8,7 @@ import { MatDividerModule } from '@angular/material/divider';
 	imports: [
 		MatButtonModule,
 		MatCardModule,
-		MatDividerModule,
+		MatDividerModule
 	],
 	templateUrl: './raquin.html',
 	styleUrl: './raquin.scss'

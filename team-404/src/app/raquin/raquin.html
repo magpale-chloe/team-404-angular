@@ -39,7 +39,23 @@
 		</mat-card-content>
 
 		<mat-card-actions class="card-actions" id="card_actions">
-            <!-- button VVV -->
+
+			<button
+				mat-flat-button
+				color="primary"
+				class="toggle-bio-button"
+				id="toggle_bio_button"
+				(click)="toggleDescription()">
+
+				<span>
+					@if (isDescriptionVisible()) {
+						Hide Details
+					} @else {
+						About Me
+					}
+				</span>
+
+			</button>
 
 		</mat-card-actions>
 
