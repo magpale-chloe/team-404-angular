@@ -1,1 +1,48 @@
-<p>raquin works!</p>
+<div class="raquin-container" id="raquin_container">
+
+	<mat-card class="profile-card" id="profile_card">
+
+		<mat-card-header class="card-header" id="card_header">
+
+			<div class="avatar-wrapper" id="avatar_wrapper">
+				<img
+					class="profile-image"
+					id="profile_image"
+					
+					[alt]="fullName()" />
+			</div>
+
+			<div class="header-text" id="header_text">
+				<h2 class="member-name" id="member_name">
+					{{ fullName() }}
+				</h2>
+
+				<p class="member-role" id="member_role">
+					{{ role() }}
+				</p>
+			</div>
+
+		</mat-card-header>
+
+		<mat-divider></mat-divider>
+
+		<mat-card-content class="card-content" id="card_content">
+
+			@if (isDescriptionVisible()) {
+				<div class="bio-section" id="bio_section">
+					<p class="description-text" id="description_text">
+						{{ description() }}
+					</p>
+				</div>
+			}
+
+		</mat-card-content>
+
+		<mat-card-actions class="card-actions" id="card_actions">
+            <!-- button VVV -->
+
+		</mat-card-actions>
+
+	</mat-card>
+
+</div>
