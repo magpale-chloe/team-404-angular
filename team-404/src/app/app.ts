@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Magpale } from './magpale/magpale';
 import { Rullan } from './rullan/rullan';
 import { Raquin } from './raquin/raquin';
+import { Staana } from './staana/staana';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { Raquin } from './raquin/raquin';
     RouterOutlet,
     Raquin,
     Rullan,
-    Magpale
+    Magpale,
+    Staana
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
