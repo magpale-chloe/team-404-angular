@@ -9,6 +9,7 @@ import { Component, signal } from '@angular/core';
 export class Magpale {
   name = signal('Precious Chloe Magpale');
   image = signal('assets/Magpale-Photo.jpg');
+<<<<<<< HEAD
   role = signal('BSIT Student & Developer');
 
   description = signal(
@@ -22,4 +23,6 @@ export class Magpale {
       (isVisible) => !isVisible
     );
   }
+=======
+>>>>>>> e48e4cc (Add Magpale's Step 3)
 }
