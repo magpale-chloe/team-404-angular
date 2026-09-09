@@ -2,13 +2,15 @@ import { Component, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
 	selector: 'app-raquin',
 	imports: [
 		MatButtonModule,
 		MatCardModule,
-		MatDividerModule
+		MatDividerModule,
+		MatIconModule
 	],
 	templateUrl: './raquin.html',
 	styleUrl: './raquin.scss'

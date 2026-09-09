@@ -47,6 +47,14 @@
 				id="toggle_bio_button"
 				(click)="toggleDescription()">
 
+				<mat-icon class="btn-icon">
+					@if (isDescriptionVisible()) {
+						visibility_off
+					} @else {
+						visibility
+					}
+				</mat-icon>
+
 				<span>
 					@if (isDescriptionVisible()) {
 						Hide Details
