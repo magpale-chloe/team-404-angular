@@ -1,5 +1,6 @@
 <div class="magpale-container" id="magpale_container">
-
+  <mat-card class="profile-card" id="profile_card">
+    <mat-card-header class="card-header" id="card_header">
       <div class="avatar-wrapper" id="avatar_wrapper">
         <img
           class="profile-image"
@@ -12,33 +13,38 @@
         <h2 class="member-name" id="member_name">
           {{ name() }}
         </h2>
-
-<<<<<<< HEAD
         <p class="member-role" id="member_role">
           {{ role() }}
         </p>
       </div>
+    </mat-card-header>
 
-       @if (isDescriptionVisible()) {
+    <mat-divider></mat-divider>
+
+    <mat-card-content class="card-content" id="card_content">
+      @if (isDescriptionVisible()) {
         <div class="bio-section" id="bio_section">
           <p class="description-text" id="description_text">
             {{ description() }}
           </p>
         </div>
-    }
+      }
+    </mat-card-content>
 
-    <button
+    <mat-card-actions class="card-actions" id="card_actions">
+      <button
+        mat-flat-button
+        color="primary"
         class="toggle-bio-button"
         id="toggle_bio_button"
         (click)="toggleDescription()">
-
+        <mat-icon class="btn-icon">
           @if (isDescriptionVisible()) {
             visibility_off
           } @else {
             visibility
           }
-
-
+        </mat-icon>
         <span>
           @if (isDescriptionVisible()) {
             Hide Details
@@ -46,9 +52,7 @@
             About Me
           }
         </span>
-
       </button>
-=======
-      </div>
->>>>>>> e48e4cc (Add Magpale's Step 3)
+    </mat-card-actions>
+  </mat-card>
 </div>
