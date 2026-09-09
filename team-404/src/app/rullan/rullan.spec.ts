@@ -24,4 +24,10 @@ describe('Rullan', () => {
     const h2Element = compiled.querySelector('h2');
     expect(h2Element?.textContent).toContain('Harvey Laurence P. Rullan');
   });
+
+  it('should toggle description visibility on button click', () => {
+    expect(component.isDescriptionVisible()).toBe(false);
+    component.toggleDescription();
+    expect(component.isDescriptionVisible()).toBe(true);
+  });
 });
