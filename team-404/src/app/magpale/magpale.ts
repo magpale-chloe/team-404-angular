@@ -8,4 +8,5 @@ import { Component, signal } from '@angular/core';
 })
 export class Magpale {
   name = signal('Precious Chloe Magpale');
+  image = signal('assets/Magpale-Photo.jpg');
 }

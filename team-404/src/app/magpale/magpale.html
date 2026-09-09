@@ -1,1 +1,17 @@
-<h2>{{ name() }}</h2>
+<div class="magpale-container" id="magpale_container">
+
+      <div class="avatar-wrapper" id="avatar_wrapper">
+        <img
+          class="profile-image"
+          id="profile_image"
+          [src]="image()"
+          [alt]="name()" />
+      </div>
+
+      <div class="header-text" id="header_text">
+        <h2 class="member-name" id="member_name">
+          {{ name() }}
+        </h2>
+
+      </div>
+</div>
