@@ -12,7 +12,42 @@
         <h2 class="member-name" id="member_name">
           {{ fullName() }}
         </h2>
+        <p class="member-role" id="member_role">
+          {{ role() }}
+        </p>
       </div>
+    </div>
+
+    <div class="card-content" id="card_content">
+      @if (isDescriptionVisible()) {
+        <div class="bio-section" id="bio_section">
+          <p class="description-text" id="description_text">
+            {{ description() }}
+          </p>
+        </div>
+      }
+    </div>
+
+    <div class="card-actions" id="card_actions">
+      <button
+          class="toggle-bio-button"
+          id="toggle_bio_button"
+          (click)="toggleDescription()">
+        <div class="btn-icon" id="btn_icon">
+          @if (isDescriptionVisible()) {
+            visibility_off
+          } @else {
+            visibility
+          }
+        </div>
+        <span>
+          @if (isDescriptionVisible()) {
+            Hide Details
+          } @else {
+            About Me
+          }
+        </span>
+      </button>
     </div>
   </div>
 </div>
