@@ -15,7 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
 })
 export class Raquin {
 	fullName = signal('Renz Mathieu M. Raquin');
-	imagePath = signal('assets/images/Raquin-Photo.JPG');
+	imagePath = signal('assets/images/Raquin-Photo.jpg');
 	role = signal('BSIT Student & Developer');
 	description = signal(
 		'I am Renz Mathieu M. Raquin, a 4th year IT student with a passion for web development and software engineering. I aspire to create systems that can make a positive impact to society.'
