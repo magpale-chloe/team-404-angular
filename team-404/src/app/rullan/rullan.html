@@ -1,6 +1,6 @@
 <div class="rullan-container" id="rullan_container">
-  <div class="profile-card" id="profile_card">
-    <div class="card-header" id="card_header">
+  <mat-card class="profile-card" id="profile_card">
+    <mat-card-header class="card-header" id="card_header">
       <div class="avatar-wrapper" id="avatar_wrapper">
         <img
             class="profile-image"
@@ -16,9 +16,11 @@
           {{ role() }}
         </p>
       </div>
-    </div>
+    </mat-card-header>
 
-    <div class="card-content" id="card_content">
+    <mat-divider></mat-divider>
+
+    <mat-card-content class="card-content" id="card_content">
       @if (isDescriptionVisible()) {
         <div class="bio-section" id="bio_section">
           <p class="description-text" id="description_text">
@@ -26,20 +28,22 @@
           </p>
         </div>
       }
-    </div>
+    </mat-card-content>
 
-    <div class="card-actions" id="card_actions">
+    <mat-card-actions class="card-actions" id="card_actions">
       <button
+          mat-flat-button
+          color="primary"
           class="toggle-bio-button"
           id="toggle_bio_button"
           (click)="toggleDescription()">
-        <div class="btn-icon" id="btn_icon">
+        <mat-icon class="btn-icon" id="btn_icon">
           @if (isDescriptionVisible()) {
             visibility_off
           } @else {
             visibility
           }
-        </div>
+        </mat-icon>
         <span>
           @if (isDescriptionVisible()) {
             Hide Details
@@ -48,6 +52,6 @@
           }
         </span>
       </button>
-    </div>
-  </div>
+    </mat-card-actions>
+  </mat-card>
 </div>
