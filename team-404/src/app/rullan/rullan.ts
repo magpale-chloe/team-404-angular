@@ -3,6 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { MemberPreview } from '../shared/member-preview/member-preview';
 
 @Component({
   selector: 'app-rullan',
@@ -10,7 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MemberPreview,
   ],
   templateUrl: './rullan.html',
   styleUrl: './rullan.scss'
