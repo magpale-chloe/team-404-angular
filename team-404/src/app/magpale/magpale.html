@@ -23,11 +23,7 @@
 
     <mat-card-content class="card-content" id="card_content">
       @if (isDescriptionVisible()) {
-        <div class="bio-section" id="bio_section">
-          <p class="description-text" id="description_text">
-            {{ description() }}
-          </p>
-        </div>
+        <app-member-preview [description]="description()"></app-member-preview>
       }
     </mat-card-content>
 
